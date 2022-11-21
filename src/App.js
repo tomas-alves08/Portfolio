@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { projectsArr } from "./projects";
+
 import Nav from "./Components/Nav";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import ProjectOverlay from "./Components/ProjectOverlay";
 import Contact from "./Components/Contact";
-import { projectsArr } from "./projects";
+import Footer from "./Components/Footer";
 
 function App() {
   const [displayOverlay, setDisplayOverlay] = useState(false);
@@ -38,6 +40,7 @@ function App() {
         />
       )}
       <Contact />
+      <Footer />
     </>
   );
 }

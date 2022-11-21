@@ -1,7 +1,6 @@
 import React from "react";
 
 import Img from "./Img";
-// import Project from "./ProjectOverlay";
 import ProjectCard from "./ProjectCard";
 import { projectsArr } from "../projects";
 
@@ -21,7 +20,6 @@ const Projects = ({
         console.log(project);
         return (
           <>
-            {/* {!displayOverlay && ( */}
             <ProjectCard
               id={project.id}
               title={project.title}
@@ -33,22 +31,6 @@ const Projects = ({
               setDisplayOverlay={setDisplayOverlay}
               setChosenProjectId={setChosenProjectId}
             />
-            {/* )}
-            {displayOverlay && (
-              <Project
-                id={project.id}
-                title={project.title}
-                url={project.url}
-                github={project.github}
-                tech={project.tech}
-                img={project.img}
-                description={project.description}
-                reflections={project.reflections}
-                key={idx}
-                displayOverlay={displayOverlay}
-                setDisplayOverlay={setDisplayOverlay}
-              />
-            )} */}
           </>
         );
       })}

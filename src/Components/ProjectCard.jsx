@@ -11,15 +11,6 @@ const ProjectCard = ({
   id,
   setChosenProjectId,
 }) => {
-  //   //Functions
-  //   const handleClickOutside = (e) => {
-  //     console.log(e.target.className);
-  //     if (e.target.className === "overlay-page-container") {
-  //       setDisplayOverlay(false);
-  //     }
-  //   };
-
-  //   let clickedProject;
   const handleClick = (e) => {
     setDisplayOverlay(!displayOverlay);
     if (!displayOverlay) console.log(e.target.id);
@@ -27,10 +18,6 @@ const ProjectCard = ({
   };
 
   return (
-    // <div
-    //   className={displayOverlay ? "overlay-page-container" : null}
-    //   onClick={handleClickOutside}
-    // >
     <div className="project-container">
       <p
         onClick={!displayOverlay ? () => setDisplayOverlay(true) : null}
@@ -52,7 +39,6 @@ const ProjectCard = ({
         </button>
       </div>
     </div>
-    // </div>
   );
 };
 

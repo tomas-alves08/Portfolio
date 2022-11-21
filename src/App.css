@@ -259,3 +259,31 @@ body {
 .contact-title {
   width: 30px;
 }
+
+.footer-container {
+  background-color: rgb(210, 221, 246);
+  width: 100%;
+  padding: 5px 0;
+}
+
+.footer-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-contact-details {
+  text-align: center;
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 0;
+}
