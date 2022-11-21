@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Img from "./Img";
 
 const ProjectOverlay = ({
@@ -7,10 +7,17 @@ const ProjectOverlay = ({
   displayOverlay,
   // id,
 }) => {
-  console.log("Overlay Project: ", chosenProject);
+  const [shortDescription, setShortDescription] = useState(true);
+  const [shortReflection, setShortReflection] = useState(true);
 
-  const { id, title, url, github, description, img, tech, reflections } =
+  let { id, title, url, github, description, img, tech, reflections } =
     chosenProject;
+
+  if (shortDescription) description = description.slice(0, 100) + "...";
+  if (shortReflection) {
+    reflections = reflections.join(". ").slice(0, 100) + "...";
+    reflections = [reflections];
+  }
 
   //FUNCTIONS
   const handleClick = (e) => {
@@ -19,7 +26,6 @@ const ProjectOverlay = ({
   };
 
   const handleClickOutside = (e) => {
-    console.log(e.target.className);
     if (e.target.className === "overlay-page-container") {
       setDisplayOverlay(false);
     }
@@ -46,6 +52,12 @@ const ProjectOverlay = ({
           Description:
           <div className="project-scroll">
             <span className="project-span"> {description}</span>
+            <span
+              style={{ color: "purple" }}
+              onClick={() => setShortDescription(!shortDescription)}
+            >
+              {shortDescription ? " show more" : " show less"}
+            </span>
           </div>
         </p>
 
@@ -59,6 +71,16 @@ const ProjectOverlay = ({
                 </li>
               );
             })}
+            <span
+              style={{
+                color: "purple",
+                fontStyle: "italic",
+                fontWeight: "600",
+              }}
+              onClick={() => setShortReflection(!shortReflection)}
+            >
+              {shortReflection ? " show more" : " show less"}
+            </span>
           </ol>
         </div>
 
