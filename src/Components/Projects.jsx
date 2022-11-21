@@ -12,7 +12,7 @@ const Projects = ({
 }) => {
   return (
     <div className="projects-container">
-      <div className="project-title-container">
+      <div className="title-container">
         <Img img="icon-title" src="./icons/projects-icon.png" />
         <p className="section-title">Projects:</p>
       </div>

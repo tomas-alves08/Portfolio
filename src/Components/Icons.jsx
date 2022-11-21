@@ -30,7 +30,7 @@ const Icons = () => {
 
   return (
     <div className="icons-container">
-      <div className="icon-title-container">
+      <div className="title-container">
         <Img img="icon-title" src="./icons/tools-icon.png" />
         <p className="section-title">Tools and Frameworks:</p>
       </div>
