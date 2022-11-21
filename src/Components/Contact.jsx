@@ -27,10 +27,7 @@ const Contact = () => {
 
   return (
     <>
-      <div>
-        <p></p>
-      </div>
-      <div className="title-container">
+      <div className="title-container" id="contact">
         <Img img="contact-title" src="./icons/contact-icon.png" />
         <p className="section-title">Want to have a chat?</p>
       </div>

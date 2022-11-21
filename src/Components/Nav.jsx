@@ -7,9 +7,15 @@ const Nav = () => {
         <p>TS Dev</p>
       </div>
       <div className="nav-items-container">
-        <p className="nav-item">About</p>
-        <p className="nav-item">Projects</p>
-        <p className="nav-item">Contact</p>
+        <a className="nav-item" href="#about">
+          <p>About</p>
+        </a>
+        <a className="nav-item" href="#projects">
+          <p>Projects</p>
+        </a>
+        <a className="nav-item" href="#contact">
+          <p>Contact</p>
+        </a>
       </div>
     </div>
   );

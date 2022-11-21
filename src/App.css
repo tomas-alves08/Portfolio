@@ -42,6 +42,7 @@ body {
   color: rgb(28, 28, 28);
   margin: auto 5px;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .nav-item:hover {
@@ -50,11 +51,16 @@ body {
   font-weight: 600;
 }
 
+#about {
+  height: 1px;
+  margin: 60px auto;
+}
+
 .img-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 100px auto 20px;
+  margin: 20 auto 20px;
 }
 
 .img {
@@ -99,7 +105,9 @@ body {
 .title-container {
   display: flex;
   flex-direction: row;
-  margin: 0px 40px 10px;
+  text-align: left;
+  width: 80%;
+  margin: 0px auto 10px;
 }
 
 .icon-title {
@@ -130,21 +138,20 @@ body {
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
+#projects {
+  height: 1px;
+}
+
 .projects-container {
   margin: 100px 0;
   padding: 0;
-}
-
-.title-container {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 40px 10px;
 }
 
 .project-container {
   border: 2px solid rgb(46, 45, 45);
   border-radius: 5px;
   width: 90%;
+  max-width: 400px;
   margin: 20px auto;
   padding: 10px 10px 0;
   background: linear-gradient(rgb(218, 142, 75), rgb(244, 173, 112));
@@ -244,7 +251,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 10px auto;
+  margin: 10px auto 130px;
 }
 
 .form-item {
@@ -264,6 +271,8 @@ body {
   background-color: rgb(210, 221, 246);
   width: 100%;
   padding: 5px 0;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer-icons-container {
@@ -275,15 +284,22 @@ body {
 }
 
 .footer-icon {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .footer-contact-details {
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
   margin: 0 auto;
   padding: 0;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 600;
 }

@@ -4,6 +4,7 @@ import Img from "./Img";
 const Footer = () => {
   const [phone, setPhone] = useState(false);
   const [email, setEmail] = useState(false);
+  const year = new Date().getFullYear();
 
   const handlePhone = () => {
     setEmail(false);
@@ -38,7 +39,9 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-icons-container">
         <div>
-          <Img img="footer-icon" src="./icons/linkedin-icon.png" />
+          <a href="https://www.linkedin.com/in/tomas-alves-de-souza-0015003b/">
+            <Img img="footer-icon" src="./icons/linkedin-icon.png" />
+          </a>
         </div>
         <div onClick={handlePhone}>
           <Img img="footer-icon" src="./icons/phone-icon.png" />
@@ -49,6 +52,9 @@ const Footer = () => {
       </div>
       <div>
         <p className="footer-contact-details">{contactDetail}</p>
+      </div>
+      <div>
+        <p className="copyright">© {year} Tomas Alves de Souza</p>
       </div>
     </div>
   );

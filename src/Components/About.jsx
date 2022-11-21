@@ -7,9 +7,12 @@ import Icons from "./Icons";
 const About = () => {
   return (
     <>
-      <Img img="img" container="img-container" src="./tomas-photo.png" />
-      <Description />
-      <Icons />
+      <div id="about"></div>
+      <div>
+        <Img img="img" container="img-container" src="./tomas-photo.png" />
+        <Description />
+        <Icons />
+      </div>
     </>
   );
 };
