@@ -13,13 +13,53 @@ let iconsArr = [
   "./icons/sql-icon.png",
   "./icons/git-icon.png",
   "./icons/github-icon.png",
+  "./icons/html-icon.png",
+  "./icons/css-icon.png",
+  "./icons/javascript-icon.png",
+  "./icons/react-icon.webp",
+  "./icons/redux-icon.webp",
+  "./icons/nodejs-icon.png",
+  "./icons/Expressjs-icon.png",
+  "./icons/sql-icon.png",
+  "./icons/git-icon.png",
+  "./icons/github-icon.png",
+  "./icons/html-icon.png",
+  "./icons/css-icon.png",
+  "./icons/javascript-icon.png",
+  "./icons/react-icon.webp",
+  "./icons/redux-icon.webp",
+  "./icons/nodejs-icon.png",
+  "./icons/Expressjs-icon.png",
+  "./icons/sql-icon.png",
+  "./icons/git-icon.png",
+  "./icons/github-icon.png",
+  "./icons/html-icon.png",
+  "./icons/css-icon.png",
+  "./icons/javascript-icon.png",
+  "./icons/react-icon.webp",
+  "./icons/redux-icon.webp",
+  "./icons/nodejs-icon.png",
+  "./icons/Expressjs-icon.png",
+  "./icons/sql-icon.png",
+  "./icons/git-icon.png",
+  "./icons/github-icon.png",
+  "./icons/html-icon.png",
+  "./icons/css-icon.png",
+  "./icons/javascript-icon.png",
+  "./icons/react-icon.webp",
+  "./icons/redux-icon.webp",
+  "./icons/nodejs-icon.png",
+  "./icons/Expressjs-icon.png",
+  "./icons/sql-icon.png",
+  "./icons/git-icon.png",
+  "./icons/github-icon.png",
 ];
 
 const Icons = () => {
   const [index, setIndex] = useState(0);
 
   const carouselInfiniteScroll = () => {
-    if (index === iconsArr.length - 1) return setIndex(0);
+    if (index === iconsArr.length - 9) return setIndex(0);
     return setIndex(index + 1);
   };
 
