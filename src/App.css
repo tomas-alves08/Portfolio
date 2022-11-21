@@ -15,14 +15,19 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  margin: auto 10px;
+  margin: auto 0px;
   font-size: 17px;
+  width: 100%;
+  transform: translateX(0%);
+  position: fixed;
+  top: 0;
+  background-color: rgb(210, 221, 246);
 }
 .nav-logo {
   font-size: 16px;
   font-family: Audiowide, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
   color: rgb(53, 9, 95);
 }
 
@@ -30,6 +35,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 10px 0 0;
 }
 
 .nav-item {
@@ -48,7 +54,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 50px auto 20px;
+  margin: 100px auto 20px;
 }
 
 .img {
