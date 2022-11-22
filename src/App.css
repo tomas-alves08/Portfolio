@@ -169,6 +169,7 @@ body {
 .project-title {
   font-size: 20px;
   font-family: Audiowide, sans-serif;
+  text-align: center;
   margin: 5px 0 10px;
   padding: 0;
 }
