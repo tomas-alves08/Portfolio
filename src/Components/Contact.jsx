@@ -31,7 +31,7 @@ const Contact = () => {
         <Img img="contact-title" src="./icons/contact-icon.png" />
         <p className="section-title">Want to have a chat?</p>
       </div>
-      <div>
+      <div className="form-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <input
             type="text"

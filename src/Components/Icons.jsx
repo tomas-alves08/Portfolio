@@ -12,7 +12,7 @@ const Icons = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => carouselInfiniteScroll(), 1200);
+    const interval = setInterval(() => carouselInfiniteScroll(), 500);
     return () => clearInterval(interval);
   });
 
