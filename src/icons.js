@@ -50,5 +50,3 @@ export const iconsArr = [
   "./icons/git-icon.png",
   "./icons/github-icon.png",
 ];
-
-(".");
