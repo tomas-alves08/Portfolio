@@ -13,8 +13,6 @@ function App() {
   const [displayOverlay, setDisplayOverlay] = useState(false);
   const [chosenProjectId, setChosenProjectId] = useState(1);
   const [chosenProject, setChosenProject] = useState(projectsArr[0]);
-  console.log("Chosen ID: ", chosenProjectId);
-  console.log("Chosen Project: ", chosenProject);
 
   useEffect(() => {
     projectsArr.find((el) => {

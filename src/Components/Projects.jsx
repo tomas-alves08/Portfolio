@@ -20,7 +20,6 @@ const Projects = ({
         <div className="projects-card-container">
           {projectsArr.map((project, idx) => {
             const keysArr = [...Object.keys(project)];
-            console.log(project);
             return (
               <>
                 <ProjectCard

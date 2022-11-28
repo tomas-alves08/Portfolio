@@ -22,7 +22,6 @@ const ProjectOverlay = ({
   //FUNCTIONS
   const handleClick = (e) => {
     setDisplayOverlay(!displayOverlay);
-    if (!displayOverlay) console.log(e.target.id);
   };
 
   const handleClickOutside = (e) => {
@@ -53,7 +52,7 @@ const ProjectOverlay = ({
           <div className="project-scroll">
             <span className="project-span"> {description}</span>
             <span
-              style={{ color: "purple" }}
+              style={{ color: "purple", fontSize: "15px" }}
               onClick={() => setShortDescription(!shortDescription)}
             >
               {shortDescription ? " show more" : " show less"}
@@ -76,6 +75,7 @@ const ProjectOverlay = ({
                 color: "purple",
                 fontStyle: "italic",
                 fontWeight: "600",
+                fontSize: "15px",
               }}
               onClick={() => setShortReflection(!shortReflection)}
             >
@@ -85,13 +85,18 @@ const ProjectOverlay = ({
         </div>
 
         <div className="project-icons-container">
-          <a href={url}>
-            <Img img="project-icon" src="./icons/url-icon.png" />
-          </a>
-
-          <a href={github}>
-            <Img img="project-icon" src="./icons/github-icon.png" />
-          </a>
+          <div className="project-icon-subcontainer">
+            <a href={url}>
+              <Img img="project-icon" src="./icons/url-icon.png" />
+            </a>
+            <p className="project-icon-description">Page Url</p>
+          </div>
+          <div className="project-icon-subcontainer">
+            <a href={github}>
+              <Img img="project-icon" src="./icons/github-icon.png" />
+            </a>
+            <p className="project-icon-description">GitHub</p>
+          </div>
 
           <button id={id} onClick={handleClick} className="project-btn">
             {displayOverlay ? "Close" : "Project Details"}

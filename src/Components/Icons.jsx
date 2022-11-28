@@ -30,7 +30,8 @@ const Icons = () => {
               style={{ transform: `translate(-${index * 100}%)` }}
               key={i}
             >
-              <Img img="icon" src={icon} />
+              <Img img="icon" src={icon.img} />
+              <p>{icon.title}</p>
             </div>
           );
         })}

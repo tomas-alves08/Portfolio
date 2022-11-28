@@ -13,7 +13,6 @@ const ProjectCard = ({
 }) => {
   const handleClick = (e) => {
     setDisplayOverlay(!displayOverlay);
-    if (!displayOverlay) console.log(e.target.id);
     if (!displayOverlay) setChosenProjectId(e.target.id);
   };
 
@@ -28,12 +27,18 @@ const ProjectCard = ({
       <Img img="project-img" src={img} />
 
       <div className="project-icons-container">
-        <a href={url}>
-          <Img img="project-icon" src="./icons/url-icon.png" />
-        </a>
-        <a href={github}>
-          <Img img="project-icon" src="./icons/github-icon.png" />
-        </a>
+        <div>
+          <a href={url}>
+            <Img img="project-icon" src="./icons/url-icon.png" />
+          </a>
+          <p className="project-icon-description">Page Url</p>
+        </div>
+        <div>
+          <a href={github}>
+            <Img img="project-icon" src="./icons/github-icon.png" />
+          </a>
+          <p className="project-icon-description">GitHub</p>
+        </div>
         <button id={id} onClick={handleClick} className="project-btn">
           {displayOverlay ? "Close" : "Project Details"}
         </button>

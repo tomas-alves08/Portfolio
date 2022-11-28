@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   height: 50px;
   margin: auto 0px;
-  font-size: 17px;
+  font-size: 19px;
   width: 100%;
   transform: translateX(0%);
   position: fixed;
@@ -41,7 +41,7 @@ body {
 .nav-item {
   color: rgb(28, 28, 28);
   margin: auto 5px;
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ body {
 
 .description-item {
   padding: 10px 40px;
-  font-size: 15px;
+  font-size: 17px;
   text-align: justify;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin: auto 5px;
   padding: 0;
@@ -133,6 +133,7 @@ body {
   width: 100px;
   margin: 0 5px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -143,7 +144,7 @@ body {
 }
 
 .projects-container {
-  margin: 100px 0;
+  margin: 50px 0;
   padding: 0;
 }
 
@@ -167,7 +168,7 @@ body {
 }
 
 .project-title {
-  font-size: 20px;
+  font-size: 22px;
   font-family: Audiowide, sans-serif;
   text-align: center;
   margin: 5px 0 10px;
@@ -184,7 +185,7 @@ body {
 }
 
 .project-subtitle {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   font-style: italic;
   margin: 10px 0;
@@ -194,7 +195,7 @@ body {
 .project-span {
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   margin-bottom: 5px;
 }
@@ -211,6 +212,7 @@ body {
 
 .project-icon {
   width: 40px;
+  align-content: center;
 }
 
 .project-icons-container {
@@ -218,6 +220,15 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 10px auto;
+}
+
+.project-icon-subcontainer {
+  text-align: center;
+}
+
+.project-icon-description {
+  margin: 0 auto;
+  font-size: 14px;
 }
 
 .project-btn {
@@ -229,6 +240,7 @@ body {
   color: aliceblue;
   font-weight: 600;
   margin: auto 0;
+  font-size: 16px;
 }
 
 .project-btn:hover {
@@ -249,11 +261,11 @@ body {
 .overlay-project-container {
   border: 2px solid rgb(46, 45, 45);
   border-radius: 5px;
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   margin: 20px auto;
   padding: 10px 10px 0;
-  background: linear-gradient(rgb(142, 141, 141), rgb(176, 176, 176));
+  background: linear-gradient(rgb(212, 212, 212), rgb(238, 237, 237));
   overflow: auto;
   max-height: 90vh;
 }
@@ -304,8 +316,10 @@ body {
 
 .footer-contact-details {
   text-align: center;
-  font-size: 11px;
-  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 3px auto;
   padding: 0;
 }
 
@@ -336,7 +350,7 @@ body {
     margin: auto;
     width: 60%;
     max-width: 500px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .title-container {
@@ -350,7 +364,7 @@ body {
   .contact-form {
     width: 100%;
     max-width: 500px;
-    margin: 10px 0 130px;
+    margin: 10px auto 130px;
   }
 
   .footer-icon {
@@ -371,6 +385,10 @@ body {
 
   .nav-items-container {
     padding: 0 100px 0 0;
+  }
+
+  .title-container {
+    justify-content: center;
   }
 
   .projects-card-container {
